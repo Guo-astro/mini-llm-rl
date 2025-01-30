@@ -1,0 +1,23 @@
+[project]
+name = "mini-llm-rl"
+version = "0.1.0"
+description = "Reproduce Deepseek R1"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate==1.3.0",
+    "datasets==3.1.0",
+    "deepspeed==0.15.4",
+    "hf-transfer==0.1.9",
+    "numpy<2.0.0",
+    "peft>=0.14.0",
+    "python-dotenv>=1.0.1",
+    "torch==2.5.1",
+    "torchvision>=0.20.1",
+    "transformers==4.48.1",
+    "trl==0.14.0",
+    "vllm",
+]
+
+[tool.uv.sources]
+vllm = { path = "vllm" }
